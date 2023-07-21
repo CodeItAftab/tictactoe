@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="home position">
+            <div class="navigation-btns">
+                <div class="nav-btn-container">
+                    <button class="single-player nav-btn start" onclick="singlePlayer()">Single Player</button>
+                </div>
+                <div class="nav-btn-container">
+                    <button class="multiplayer nav-btn start" onclick="multiPlayer()">Multiplayer</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <section class="player-info">
+                <div class="score-card">
+                    <div class="card-1 player-card">
+                        <h2 class="player" id="player-1">Player1: O</h2>
+                        <span class="dash">-</span>
+                        <h2 id="score-1" class="player-score">0</h2>
+                    </div>
+                    <div class="card-2 player-card">
+                        <h2 class="player" id="player-2">Player2: X</h2>
+                        <span class="dash">-</span>
+                        <h2 id="score-2" class="player-score">0</h2>
+                    </div>
+                </div>
+                <div class="result">
+                    <h2 class="winner" id="result">Single Player</h2>
+                </div>
+            </section>
+            <section class="game-section">
+                <div class="btn-container">
+                    <table>
+                        <tr class="row-1 row">
+                            <td class="box" id="box-1" ><button class="btn game-btn" id="btn-1" onclick="f11()"><h1></h1></button></td>
+                            <td class="box" id="box-2" ><button class="btn game-btn" id="btn-2" onclick="f12()"><h1></h1></button></td>
+                            <td class="box" id="box-3" ><button class="btn game-btn" id="btn-3" onclick="f13()"><h1></h1></button></td>
+                        </tr>
+                        <tr class="row-2 row">
+                            <td class="box" id="box-4" ><button class="btn game-btn" id="btn-4" onclick="f21()"><h1></h1></button></td>
+                            <td class="box" id="box-5" ><button class="btn game-btn" id="btn-5" onclick="f22()"><h1></h1></button></td>
+                            <td class="box" id="box-6" ><button class="btn game-btn" id="btn-6" onclick="f23()"><h1></h1></button></td>
+                        </tr>
+                        <tr class="row-3 row">
+                            <td class="box" id="box-7" ><button class="btn game-btn" id="btn-7" onclick="f31()"><h1></h1></button></td>
+                            <td class="box" id="box-8" ><button class="btn game-btn" id="btn-8" onclick="f32()"><h1></h1></button></td>
+                            <td class="box" id="box-9" ><button class="btn game-btn" id="btn-9" onclick="f33()"><h1></h1></button></td>
+                        </tr>
+                    </table>
+                </div>
+    
+                <div class="navigation-btns home-restart">
+                    <div class="nav-btn-container">
+                        <button class="restart-btn nav-btn" id="playeagain" onclick="PlayAgain()"><h3>Play Again</h3><span class="material-symbols-outlined " >refresh</span></button>
+                    </div>
+                    <div class="nav-btn-container">
+                        <button class="home-btn nav-btn" onclick="f1()" onclick="mode()"><h3>Home</h3><span class="material-symbols-outlined " >home</span></button>
+                    </div>
+                </div>
+            </section>
+            
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
